@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Patches | Alex Art &amp; Graphics</title>
+  <meta name="description" content="Explore custom patch manufacturing for embroidered, PVC, woven, leather, and chenille patches. Ideal for brands, teams, and tactical gear.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo" id="header-logo-link">
+        <svg viewBox="0 0 100 100">
+          <use href="assets/logo.svg#yellowGrad"></use>
+          <polygon points="50,5 90,28 90,72 50,95 10,72 10,28" fill="#0D1B3D" stroke="#FFD400" stroke-width="4" />
+          <path d="M50,20 L75,70 L60,70 L50,45 L40,70 L25,70 Z" fill="#0D1B3D" />
+          <path d="M15,55 L85,55" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+          <circle cx="50" cy="40" r="5" fill="#0D1B3D" />
+        </svg>
+        <span>ALEX <span class="highlight">ART</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="navigation-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link" id="nav-about">About</a></li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link active" id="nav-services">Services <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></a>
+            <ul class="dropdown-menu">
+              <li><a href="design-work.html" class="dropdown-link" id="drop-design">Design Work</a></li>
+              <li><a href="digitizing.html" class="dropdown-link" id="drop-digitizing">Digitizing</a></li>
+              <li><a href="patches.html" class="dropdown-link active" id="drop-patches">Patches</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="faq.html" class="nav-link" id="nav-faq">FAQ</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link" id="nav-contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#" class="btn btn-primary btn-quote-trigger" id="header-quote-btn">Get Free Quote</a>
+      </div>
+
+      <button class="burger-menu" aria-label="Toggle Navigation" id="mobile-burger-btn">
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Inner Hero Section (Redesigned with Load-in animation) -->
+  <section class="inner-hero" id="patches-hero" data-reveal="fade-up">
+    <div class="hero-decor" aria-hidden="true">
+      <span class="hero-shape shape-1"></span>
+      <span class="hero-shape shape-2"></span>
+      <span class="hero-shape shape-3"></span>
+    </div>
+    <div class="container">
+      <div class="hero-row">
+        <div class="hero-text">
+          <h1 class="animate-fade-up">Custom Patches</h1>
+          <div class="breadcrumbs animate-fade-up delay-1">
+            <a href="index.html">Home</a>
+            <span>&bull;</span>
+            <span>Services</span>
+            <span>&bull;</span>
+            <span>Patches</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Patch Types Subsections -->
+  <section class="bg-white" id="patch-types-detail">
+    <div class="container">
+      <div class="section-header" data-reveal="fade-up">
+        <span class="sub">Manufacturing Styles</span>
+        <h2>Choose Your Patch Material</h2>
+        <p>We manufacture custom patches in five premium formats, tailored for tactical gears, corporate uniforms, sports merchandise, or vintage jackets.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <!-- Patch 1 -->
+        <div class="card" id="patch-embroidered" data-reveal="fade-up" data-delay="0">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Embroidered Patches</h3>
+          <p>The timeless industry classic. Woven with thick lustrous threads on durable twill backings. Features a thick raised merrowed border. Best for scout uniforms, club vests, and work shirts.</p>
+        </div>
+
+        <!-- Patch 2 -->
+        <div class="card" id="patch-pvc" data-reveal="fade-up" data-delay="100">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+            </svg>
+          </div>
+          <h3 class="service-title">PVC Rubber Patches</h3>
+          <p>Modern, waterproof, and extremely durable rubberized patches. Ideal for outdoor gear, police tactical vests, and marine applications. Supports high-detail 2D or 3D dimensional molding.</p>
+        </div>
+
+        <!-- Patch 3 -->
+        <div class="card" id="patch-woven" data-reveal="fade-up" data-delay="200">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Woven Patches</h3>
+          <p>Produced using ultra-thin threads woven tightly together. Ideal for complex designs containing gradient colors, tiny details, or lettering heights under 4mm that standard embroidery cannot sew cleanly.</p>
+        </div>
+
+        <!-- Patch 4 -->
+        <div class="card" id="patch-leather" data-reveal="fade-up" data-delay="300">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Leather Patches</h3>
+          <p>Premium laser-etched, debossed, or printed genuine and faux leather patches. Adds an organic, upscale vintage branding aesthetic to denim jackets, canvas aprons, and flat-brim caps.</p>
+        </div>
+
+        <!-- Patch 5 -->
+        <div class="card" id="patch-chenille" data-reveal="fade-up" data-delay="400">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Chenille Patches</h3>
+          <p>Features thick, carpet-like fuzzy yarn loops backed by heavy felt layer outlines. Famous for classic high school letterman jackets, sports team awards, and retro activewear.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Showcase Section -->
+  <section class="bg-light" id="patch-showcase-gallery">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="showcase-content" data-reveal="fade-right">
+          <div class="section-header" style="text-align: left; margin-bottom: 35px; margin-left: 0;">
+            <span class="sub">Product Showcase</span>
+            <h2>Top-Tier Stitching &amp; Mold Cuts</h2>
+            <p>Every patch we manufacture undergoes rigid inspections to confirm colors match, backings are securely sealed, and laser borders cut cleanly.</p>
+          </div>
+          <ul class="service-list" style="margin-bottom: 30px;">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>
+              <strong>Borders:</strong> Choose between classic Merrowed borders (heavy thread wrap) or clean Hot-Cut/Laser boundaries (flush borders).
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>
+              <strong>Backings:</strong> Iron-on (heat seal), Velcro (hook &amp; loop), dynamic self-adhesive tape, or standard sew-on (no backing).
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>
+              <strong>Thread colors:</strong> Up to 12 thread colors per embroidered design at no additional cost. High lustrous polyester threads.
+            </li>
+          </ul>
+          <a href="#" class="btn btn-primary btn-quote-trigger">Order Custom Patches</a>
+        </div>
+        <div class="image-stack" data-reveal="fade-left">
+          <img src="assets/custom_patches.png" class="stack-base float-anim" alt="Alex Art Custom Manufactured Patches Material Showcase">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ordering Process Section -->
+  <section class="bg-white" id="patches-process">
+    <div class="container">
+      <div class="section-header" data-reveal="fade-up">
+        <span class="sub">Easy ordering steps</span>
+        <h2>How To Order Custom Patches</h2>
+        <p>From visual mockups to final shipment tracking, we make buying custom patches simple.</p>
+      </div>
+
+      <div class="process-flow">
+        <div class="process-step" id="step-1" data-reveal="fade-up" data-delay="0">
+          <div class="process-num">01</div>
+          <h3>Send Design</h3>
+          <p>Submit your artwork or idea using our form, specifying size &amp; patch quantity.</p>
+        </div>
+
+        <div class="process-step" id="step-2" data-reveal="fade-up" data-delay="150">
+          <div class="process-num">02</div>
+          <h3>Approve Proof</h3>
+          <p>We send you a detailed digital proof mockup mapping stitch placement &amp; borders.</p>
+        </div>
+
+        <div class="process-step" id="step-3" data-reveal="fade-up" data-delay="300">
+          <div class="process-num">03</div>
+          <h3>We Manufacture</h3>
+          <p>Once approved, we run your order on high-capacity embroidery or injection machines.</p>
+        </div>
+
+        <div class="process-step" id="step-4" data-reveal="fade-up" data-delay="450">
+          <div class="process-num">04</div>
+          <h3>Free Shipping</h3>
+          <p>We check every single patch, package them cleanly, and ship straight to your door.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-navy text-center" id="patches-cta">
+    <div class="container" data-reveal="zoom-in">
+      <h2 style="font-size: 38px; margin-bottom: 20px;">Ready to Start Your Custom Patch Run?</h2>
+      <p style="font-size: 18px; max-width: 600px; margin: 0 auto 30px; opacity: 0.85;">Got a design ready? Upload it today and get a free mockup showing how it will translate onto a physical patch.</p>
+      <a href="#" class="btn btn-white btn-quote-trigger" id="patches-cta-btn">Get Free Patch Mockup &amp; Quote</a>
+    </div>
+  </section>
+
+  <!-- Patches Portfolio Section -->
+  <section class="bg-light" id="patches-portfolio">
+    <div class="container">
+      <div class="section-header" data-reveal="fade-up">
+        <span class="sub">Our Portfolio</span>
+        <h2>Patch Examples</h2>
+        <p>Explore our collection of premium embroidered patches, PVC patches, and leather patch manufacturing work.</p>
+      </div>
+
+      <div class="portfolio-grid" data-reveal="fade-up" data-delay="150">
+        <!-- Embroidered Patch -->
+        <div class="portfolio-item" id="patches-portfolio-1">
+          <img src="assets/portfolio_embroidered_patch.png" alt="Alex Art Custom Embroidered Patches">
+          <div class="portfolio-overlay">
+            <span class="portfolio-tag">Patches</span>
+            <h3>Embroidered Patch</h3>
+            <p>Premium embroidered patches with perfect merrowed borders.</p>
+          </div>
+        </div>
+
+        <!-- PVC Patch -->
+        <div class="portfolio-item" id="patches-portfolio-2">
+          <img src="assets/portfolio_pvc_patch.png" alt="Alex Art PVC Patch Manufacturing">
+          <div class="portfolio-overlay">
+            <span class="portfolio-tag">Patches</span>
+            <h3>PVC Patch</h3>
+            <p>Durable PVC molded patches for tactical and outdoor applications.</p>
+          </div>
+        </div>
+
+        <!-- Leather Patch -->
+        <div class="portfolio-item" id="patches-portfolio-3">
+          <img src="assets/portfolio_leather_patch.png" alt="Alex Art Leather Patch Production">
+          <div class="portfolio-overlay">
+            <span class="portfolio-tag">Patches</span>
+            <h3>Leather Patch</h3>
+            <p>Custom leather patches with premium embroidered or debossed branding.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col">
+          <h3 class="footer-logo">ALEX <span>ART</span></h3>
+          <p>Premium embroidery digitizing, clean vector graphic design conversions, and top-grade custom patch manufacturing agency. Trust the industry veterans for error-free work.</p>
+                                                  <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61589049423799" class="social-btn" aria-label="Facebook" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg></a>
+            <a href="https://www.instagram.com/AlexArtAndGraphics" class="social-btn" aria-label="Instagram" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01" />
+              </svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact Form</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="design-work.html">Design Work</a></li>
+            <li><a href="digitizing.html">Embroidery Digitizing</a></li>
+            <li><a href="patches.html">Custom Patches</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <a href="tel:000-000-0000">000-000-0000</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:AlexArt%26Graphics@gmail.com">AlexArt&Graphics@gmail.com</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:AlexArt%26Graphics@yahoo.com">AlexArt&Graphics@yahoo.com</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Portland, Oregon, USA</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 2H7a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5zm-5 15a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.5-11.5h.01"/></svg>
+              <a href="https://www.instagram.com/AlexArtAndGraphics" target="_blank" rel="noopener">Instagram</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              <a href="https://www.facebook.com/profile.php?id=61589049423799" target="_blank" rel="noopener">Facebook</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Alex Art &amp; Graphics. All rights reserved. Strict White, Yellow &amp; Navy Blue branding.</p>
+        <p>Premium Creative Agency Design</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Quote Modal -->
+  <div class="quote-modal" id="free-quote-modal">
+    <div class="quote-modal-content">
+      <button class="modal-close" aria-label="Close Modal" id="modal-close-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      
+      <div style="text-align: center; margin-bottom: 30px;">
+        <h2 class="text-navy" style="font-size: 28px; margin-bottom: 8px;">Request a Free Quote</h2>
+        <p>Upload your design and file specs, and we will get back to you with a digital mock and price estimate.</p>
+      </div>
+
+      <form id="quote-request-form">
+        <div class="form-group-row">
+          <div class="form-group">
+            <label for="modal-name">Full Name *</label>
+            <input type="text" id="modal-name" class="form-control" required placeholder="John Doe">
+          </div>
+          <div class="form-group">
+            <label for="modal-email">Email Address *</label>
+            <input type="email" id="modal-email" class="form-control" required placeholder="john@example.com">
+          </div>
+        </div>
+
+        <div class="form-group-row">
+          <div class="form-group">
+            <label for="modal-phone">Phone Number</label>
+            <input type="text" id="modal-phone" class="form-control" placeholder="(555) 555-5555">
+          </div>
+          <div class="form-group">
+            <label for="modal-service">Service Type *</label>
+            <select id="modal-service" class="form-control" required>
+              <option value="">Select Service...</option>
+              <option value="digitizing">Embroidery Digitizing</option>
+              <option value="vector">Vector Art Conversion</option>
+              <option value="patches">Custom Patches Manufacturing</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Attach Artwork / Logo File *</label>
+          <label class="form-file-upload">
+            <input type="file" id="modal-file" required accept=".jpg,.png,.gif,.pdf,.ai,.eps,.dst,.pes">
+            <div class="file-upload-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/>
+              </svg>
+            </div>
+            <p>Drag and drop your file here, or <strong>browse files</strong><br><span style="font-size: 12px; color: var(--text-muted);">Accepts JPG, PNG, PDF, AI, EPS, DST (Max 10MB)</span></p>
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label for="modal-notes">Project Instructions / Size Specs</label>
+          <textarea id="modal-notes" class="form-control" placeholder="Please specify dimensions, quantity of patches, or backing details (e.g. iron-on, velcro) here..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;" id="modal-submit-btn">Submit Quote Request</button>
+
+        <div class="success-alert" id="modal-success-msg">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+            <polyline points="22 4 12 14.01 9 11.01"/>
+          </svg>
+          <h3 class="text-navy" style="margin-bottom: 8px;">Quote Request Submitted Successfully!</h3>
+          <p>Thank you. We have received your file. Our design team will inspect your artwork and send you an email with pricing and details shortly.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Back to Top" id="scroll-to-top-btn">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
+
+  <!-- JS Link -->
+  <script src="app.js"></script>
+  <script>
+    (function () {
+      const items = document.querySelectorAll('.portfolio-item');
+      if (!items.length) return;
+      const obs = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('reveal-in');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      items.forEach(i => obs.observe(i));
+    })();
+  </script>
+</body>
+</html>

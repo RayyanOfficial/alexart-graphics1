@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frequently Asked Questions | Alex Art &amp; Graphics</title>
+  <meta name="description" content="Find answers to all your embroidery digitizing, vector art conversion, custom patches, and pricing questions. Fast 24-hour file delivery, low minimum orders.">
+  <meta name="keywords" content="embroidery faq, digitizing questions, vector conversion help, custom patches details, order patches help">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo" id="header-logo-link">
+        <svg viewBox="0 0 100 100">
+          <use href="assets/logo.svg#yellowGrad"></use>
+          <polygon points="50,5 90,28 90,72 50,95 10,72 10,28" fill="#0D1B3D" stroke="#FFD400" stroke-width="4" />
+          <path d="M50,20 L75,70 L60,70 L50,45 L40,70 L25,70 Z" fill="#FFD400" />
+          <path d="M15,55 L85,55" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+          <circle cx="50" cy="40" r="5" fill="#0D1B3D" />
+        </svg>
+        <span>ALEX <span class="highlight">ART</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="navigation-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link" id="nav-about">About</a></li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link" id="nav-services">Services <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></a>
+            <ul class="dropdown-menu">
+              <li><a href="design-work.html" class="dropdown-link" id="drop-design">Design Work</a></li>
+              <li><a href="digitizing.html" class="dropdown-link" id="drop-digitizing">Digitizing</a></li>
+              <li><a href="patches.html" class="dropdown-link" id="drop-patches">Patches</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="faq.html" class="nav-link active" id="nav-faq">FAQ</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link" id="nav-contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#" class="btn btn-primary btn-quote-trigger" id="header-quote-btn">Get Free Quote</a>
+      </div>
+
+      <button class="burger-menu" aria-label="Toggle Navigation" id="mobile-burger-btn">
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Inner Hero Section (Professional FAQ Banner) -->
+    <section class="inner-hero" id="faq-hero" data-reveal="fade-up">
+      <div class="hero-decor" aria-hidden="true">
+        <span class="hero-shape shape-1"></span>
+        <span class="hero-shape shape-2"></span>
+        <span class="hero-shape shape-3"></span>
+      </div>
+      <div class="container">
+        <div class="hero-row">
+          <div class="hero-text">
+            <h1 class="animate-fade-up">Frequently Asked Questions</h1>
+            <p class="subtitle animate-fade-up delay-1">Find expert answers on file preparation, production timelines, pricing, and quality standards for every project.</p>
+            <div class="breadcrumbs animate-fade-up delay-2">
+              <a href="index.html">Home</a>
+              <span>&bull;</span>
+              <span>FAQ</span>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- FAQ Search Section -->
+  <section class="faq-search-section bg-light" id="faq-search-wrapper-section">
+    <div class="container">
+      <div class="faq-search-wrapper" data-reveal="fade-up">
+        <div class="search-input-container">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <input type="text" id="faq-search-input" placeholder="Search for questions or keywords (e.g. turnaround, formats, backing)..." aria-label="Search FAQs">
+          <button id="faq-search-clear" aria-label="Clear search input" style="display: none;">&times;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Categories & Questions Layout -->
+  <section class="faq-main-section bg-white" id="faq-interactive-layout">
+    <div class="container">
+      <div class="faq-layout">
+        
+        <!-- Sidebar Navigation -->
+        <aside class="faq-sidebar" data-reveal="fade-right">
+          <div class="faq-categories-nav">
+            <h4 class="sidebar-title">Categories</h4>
+            <ul class="category-list" id="faq-category-buttons-list">
+              <li>
+                <button class="category-btn active" data-category="all" id="cat-btn-all">
+                  <span>All Questions</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg>
+                </button>
+              </li>
+              <li>
+                <button class="category-btn" data-category="general" id="cat-btn-general">
+                  <span>General Questions</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg>
+                </button>
+              </li>
+              <li>
+                <button class="category-btn" data-category="digitizing" id="cat-btn-digitizing">
+                  <span>Embroidery Digitizing</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg>
+                </button>
+              </li>
+              <li>
+                <button class="category-btn" data-category="vector" id="cat-btn-vector">
+                  <span>Vector Art</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg>
+                </button>
+              </li>
+              <li>
+                <button class="category-btn" data-category="patches" id="cat-btn-patches">
+                  <span>Custom Patches</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg>
+                </button>
+              </li>
+              <li>
+                <button class="category-btn" data-category="pricing" id="cat-btn-pricing">
+                  <span>Pricing &amp; Delivery</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg>
+                </button>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="faq-cta-box" id="faq-cta-sidebar-panel">
+            <h4>Still Have Questions?</h4>
+            <p>Can't find the answers you're looking for? Reach out to our design and artwork department today.</p>
+            <a href="contact.html" class="btn btn-primary" style="width: 100%; padding: 12px 20px; font-size: 14px;" id="sidebar-contact-btn">Contact Us Now</a>
+          </div>
+        </aside>
+
+        <!-- Accordion FAQs Area -->
+        <main class="faq-content-area" id="faq-accordions-container" data-reveal="fade-left">
+          
+          <!-- Category 1: General Questions -->
+          <div class="faq-category-group active" data-category="general" id="group-general">
+            <h3 class="category-group-title">General Questions</h3>
+            <div class="faq-accordion">
+              
+              <!-- FAQ 1 -->
+              <div class="faq-item" id="faq-item-1">
+                <button class="faq-header" id="faq-hdr-1">
+                  <h3>What services do you offer?</h3>
+                  <div class="faq-icon">+</div>
+                </button>
+                <div class="faq-body" id="faq-bdy-1">
+                  <div class="faq-body-content">
+                    <p>We offer world-class embroidery digitizing, professional raster-to-vector art conversion, and premium custom patch manufacturing (including embroidered, woven, PVC rubber, leather, and chenille patches). We supply clean, high-precision production-ready files and physical products.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 2 -->
+              <div class="faq-item" id="faq-item-2">
+                <button class="faq-header" id="faq-hdr-2">
+                  <h3>How do I place an order?</h3>
+                  <div class="faq-icon">+</div>
+                </button>
+                <div class="faq-body" id="faq-bdy-2">
+                  <div class="faq-body-content">
+                    <p>Placing an order is simple! Click any "Get Free Quote" button on our site to upload your logo or design artwork. Our design team will analyze your files and send you a digital proof and price estimate within a couple of hours. Once you approve, we begin production immediately.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 3 -->
+              <div class="faq-item" id="faq-item-3">
+                <button class="faq-header" id="faq-hdr-3">
+                  <h3>What is your turnaround time?</h3>
+                  <div class="faq-icon">+</div>
+                </button>
+                <div class="faq-body" id="faq-bdy-3">
+                  <div class="faq-body-content">
+                    <p>For standard digitizing and vector conversion files, our turnaround is under 24 hours. Physical patch production and delivery typically take 7 to 14 business days, depending on the complexity of the design and order quantity. We also offer express options for rush orders.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Category 2: Embroidery Digitizing -->
+          <div class="faq-category-group active" data-category="digitizing" id="group-digitizing">
+            <h3 class="category-group-title">Embroidery Digitizing</h3>
+            <div class="faq-accordion">
+              
+              <!-- FAQ 4 -->
+              <div class="faq-item" id="faq-item-4">
+                <button class="faq-header" id="faq-hdr-4">
+                  <h3>What file formats do you provide?</h3>
+                  <div class="faq-icon">+</div>
+                </button>
+                <div class="faq-body" id="faq-bdy-4">
+                  <div class="faq-body-content">
+                    <p>We supply all major commercial and home embroidery machine extensions including DST, PES, EXP, HUS, JEF, CND, EMB, and PDF worksheets. Unless specified otherwise, commercial files are sent in standard DST format.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 5 -->
+              <div class="faq-item" id="faq-item-5">
+                <button class="faq-header" id="faq-hdr-5">
+                  <h3>Do you offer 3D Puff Digitizing?</h3>
+                  <div class="faq-icon">+</div>
+                </button>
+                <div class="faq-body" id="faq-bdy-5">
+                  <div class="faq-body-content">
+                    <p>Yes! We specialize in premium 3D Puff (raised) digitizing for caps, visors, and outerwear. We manually program thick underlays and clean satin columns to ensure the foam is sliced cleanly and the design stands out perfectly.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 6 -->
+              <div class="faq-item" id="faq-item-6">
+                <button class="faq-header" id="faq-hdr-6">
+                  <h3>Can you digitize complex designs?</h3>
+                  <div class="faq-icon">+</div>
+                </button>
+                <div class="faq-body" id="faq-bdy-6">
+                  <div class="faq-body-content">
+                    <p>Absolutely. Our veteran digitizers have years of experience converting high-detail artwork, gradients, and intricate text into clean stitch paths. We optimize density and angles to prevent thread breaks, fabric puckering, and alignment shifts on commercial embroidery machines.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Category 3: Vector Art -->
+          <div class="faq-category-group active" data-category="vector" id="group-vector">
+            <h3 class="category-group-title">Vector Art</h3>
+            <div class="faq-accordion">
+              
+              <!-- FAQ 7 -->
+              <div class="faq-item" id="faq-item-7">
+                <button class="faq-header" id="faq-hdr-7">
+                  <h3>Can you convert JPG to Vector?</h3>
+                  <div class="faq-icon">+</div>
+                </button>
+                <div class="faq-body" id="faq-bdy-7">
+                  <div class="faq-body-content">
+                    <p>Yes. We manually trace low-resolution JPG, PNG, or hand-drawn raster artwork into clean, mathematical vector paths. This ensures your logo can scale to any size (from business cards to large billboards) without losing sharpness.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 8 -->
+              <div class="faq-item" id="faq-item-8">
+                <button class="faq-header" id="faq-hdr-8">
+                  <h3>Which vector formats do you provide?</h3>
+                  <div class="faq-icon">+</div>
+                </button>
+                <div class="faq-body" id="faq-bdy-8">
+                  <div class="faq-body-content">
+                    <p>We deliver vector graphics in AI, EPS, PDF, SVG, and high-resolution transparent PNG. These industry-standard vector files are compatible with all modern editing software and commercial print systems.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 9 -->
+              <div class="faq-item" id="faq-item-9">
+                <button class="faq-header" id="faq-hdr-9">
+                  <h3>Is the vector file print-ready?</h3>
+                  <div class="faq-icon">+</div>
+                </button>
+                <div class="faq-body" id="faq-bdy-9">
+                  <div class="faq-body-content">
+                    <p>Yes, 100%. Our vector conversions are built strictly using clean nodes, proper layer structures, and correct color models (CMYK or Pantone colors), making them instantly ready for screen printing, vinyl cutting, embroidery, or large-scale digital printing.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Category 4: Custom Patches -->
+          <div class="faq-category-group active" data-category="patches" id="group-patches">
+            <h3 class="category-group-title">Custom Patches</h3>
+            <div class="faq-accordion">
+              
+              <!-- FAQ 10 -->
+              <div class="faq-item" id="faq-item-10">
+                <button class="faq-header" id="faq-hdr-10">
+                  <h3>What patch types do you offer?</h3>
+                  <div class="faq-icon">+</div>
+                </button>
+                <div class="faq-body" id="faq-bdy-10">
+                  <div class="faq-body-content">
+                    <p>We manufacture a wide range of premium custom patches: traditional high-thread-count Embroidered patches, micro-thread Woven patches for extreme detail, durable and waterproof molded PVC rubber patches, classic Leather patches, and fuzzy Chenille patches.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 11 -->
+              <div class="faq-item" id="faq-item-11">
+                <button class="faq-header" id="faq-hdr-11">
+                  <h3>Is there a minimum order quantity?</h3>
+                  <div class="faq-icon">+</div>
+                </button>
+                <div class="faq-body" id="faq-bdy-11">
+                  <div class="faq-body-content">
+                    <p>We believe in supporting businesses of all sizes, so we have no strict minimum order quantity (MOQ) for digital digitizing and vector files. For physical custom patches, our minimum order is just 10 pieces, making it easy to order samples or small team quantities.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 12 -->
+              <div class="faq-item" id="faq-item-12">
+                <button class="faq-header" id="faq-hdr-12">
+                  <h3>Do you provide sample previews?</h3>
+                  <div class="faq-icon">+</div>
+                </button>
+                <div class="faq-body" id="faq-bdy-12">
+                  <div class="faq-body-content">
+                    <p>Yes, we always provide a high-resolution digital mock-up for your review before physical production begins. For large patch orders, we can also provide a photograph of the first physical stitch-out or mold sample for final approval.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Category 5: Pricing & Delivery -->
+          <div class="faq-category-group active" data-category="pricing" id="group-pricing">
+            <h3 class="category-group-title">Pricing &amp; Delivery</h3>
+            <div class="faq-accordion">
+              
+              <!-- FAQ 13 -->
+              <div class="faq-item" id="faq-item-13">
+                <button class="faq-header" id="faq-hdr-13">
+                  <h3>How much does digitizing cost?</h3>
+                  <div class="faq-icon">+</div>
+                </button>
+                <div class="faq-body" id="faq-bdy-13">
+                  <div class="faq-body-content">
+                    <p>We offer simple, flat-rate pricing based on the size and placement of the design (such as left chest/caps versus full jacket backs) rather than counting stitches. This makes your budgeting highly predictable. Get a quote to see our competitive rates!</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 14 -->
+              <div class="faq-item" id="faq-item-14">
+                <button class="faq-header" id="faq-hdr-14">
+                  <h3>How much does vector conversion cost?</h3>
+                  <div class="faq-icon">+</div>
+                </button>
+                <div class="faq-body" id="faq-bdy-14">
+                  <div class="faq-body-content">
+                    <p>Our vector conversion starts at low flat rates, varying slightly depending on the complexity of the design (e.g., simple clean text logo vs. complex hand-drawn illustration with fine details). All quotes are transparent with no hidden fees.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 15 -->
+              <div class="faq-item" id="faq-item-15">
+                <button class="faq-header" id="faq-hdr-15">
+                  <h3>What delivery methods do you offer?</h3>
+                  <div class="faq-icon">+</div>
+                </button>
+                <div class="faq-body" id="faq-bdy-15">
+                  <div class="faq-body-content">
+                    <p>Digital files (digitized embroidery maps and vector source files) are delivered securely via email or download link. Physical products like custom patches are shipped worldwide using reliable carriers like DHL, FedEx, and UPS, complete with tracking numbers.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Empty State (No Search Results Found) -->
+          <div class="faq-no-results" id="faq-no-results-container" style="display: none;">
+            <div class="no-results-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"/>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                <line x1="8" y1="11" x2="16" y2="11"/>
+              </svg>
+            </div>
+            <h3>No FAQs Found</h3>
+            <p>We couldn't find any questions matching your search for <strong id="search-query-placeholder">""</strong>. Try using other keywords or clear the search to browse all FAQs.</p>
+            <button class="btn btn-outline-navy" id="faq-search-reset" style="padding: 10px 24px; font-size: 14px; margin-top: 15px;">Reset Search</button>
+          </div>
+
+        </main>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-navy text-center" id="faq-cta-section">
+    <div class="container" data-reveal="zoom-in">
+      <h2 style="font-size: 38px; margin-bottom: 20px;">Ready to Digitizing Your Next Custom Patch Project?</h2>
+      <p style="font-size: 18px; max-width: 600px; margin: 0 auto 30px; opacity: 0.85;">Send us your designs and artwork files today. Get a completely free digital proof and quote within a couple of hours.</p>
+      <a href="#" class="btn btn-white btn-quote-trigger" id="faq-cta-quote-btn">Get Free Quote Now</a>
+    </div>
+  </section>
+
+  <!-- Premium Payment Methods Section -->
+  <section class="payment-methods-section" id="payment-methods">
+    <div class="container">
+      <div class="section-header" data-reveal="fade-up">
+        <h2>Secure Payment Methods</h2>
+        <p>We accept all major payment options for a fast and secure checkout experience.</p>
+      </div>
+
+      <div class="payment-logos-grid">
+        <!-- Visa -->
+        <div class="payment-logo-card" data-payment="visa">
+          <svg viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg" class="payment-svg">
+            <rect x="10" y="10" width="100" height="60" rx="8" fill="#FFFFFF" stroke="#0D1B3D" stroke-width="1.5"/>
+            <text x="60" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#0D1B3D">VISA</text>
+          </svg>
+          <span class="payment-label">Visa</span>
+        </div>
+
+        <!-- Mastercard -->
+        <div class="payment-logo-card" data-payment="mastercard">
+          <svg viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg" class="payment-svg">
+            <rect x="10" y="10" width="100" height="60" rx="8" fill="#FFFFFF" stroke="#0D1B3D" stroke-width="1.5"/>
+            <circle cx="45" cy="40" r="15" fill="#FFD400" opacity="0.8"/>
+            <circle cx="75" cy="40" r="15" fill="#0D1B3D" opacity="0.8"/>
+          </svg>
+          <span class="payment-label">Mastercard</span>
+        </div>
+
+        <!-- PayPal -->
+        <div class="payment-logo-card" data-payment="paypal">
+          <div class="payment-logo-wrapper">
+            <svg viewBox="0 0 180 80" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" class="payment-svg">
+              <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="34" font-weight="900">
+                <tspan fill="#003087">Pay</tspan><tspan fill="#009CDE">Pal</tspan>
+              </text>
+            </svg>
+          </div>
+          <span class="payment-label">PayPal</span>
+        </div>
+
+        <!-- Maestro -->
+        <div class="payment-logo-card" data-payment="maestro">
+          <svg viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg" class="payment-svg">
+            <rect x="10" y="10" width="100" height="60" rx="8" fill="#FFFFFF" stroke="#0D1B3D" stroke-width="1.5"/>
+            <circle cx="45" cy="38" r="10" fill="#FFD400" opacity="0.9"/>
+            <circle cx="65" cy="38" r="10" fill="#0D1B3D" opacity="0.9"/>
+            <path d="M55 28 L65 48 M65 28 L55 48" stroke="#FFFFFF" stroke-width="1.5"/>
+          </svg>
+          <span class="payment-label">Maestro</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col">
+          <h3 class="footer-logo">ALEX <span>ART</span></h3>
+          <p>Premium embroidery digitizing, clean vector graphic design conversions, and top-grade custom patch manufacturing agency. Trust the industry veterans for error-free work.</p>
+                                                  <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61589049423799" class="social-btn" aria-label="Facebook" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg></a>
+            <a href="https://www.instagram.com/AlexArtAndGraphics" class="social-btn" aria-label="Instagram" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01" />
+              </svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact Form</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="design-work.html">Design Work</a></li>
+            <li><a href="digitizing.html">Embroidery Digitizing</a></li>
+            <li><a href="patches.html">Custom Patches</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <a href="tel:000-000-0000">000-000-0000</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:AlexArt%26Graphics@gmail.com">AlexArt&Graphics@gmail.com</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:AlexArt%26Graphics@yahoo.com">AlexArt&Graphics@yahoo.com</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Portland, Oregon, USA</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 2H7a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5zm-5 15a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.5-11.5h.01"/></svg>
+              <a href="https://www.instagram.com/AlexArtAndGraphics" target="_blank" rel="noopener">Instagram</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              <a href="https://www.facebook.com/profile.php?id=61589049423799" target="_blank" rel="noopener">Facebook</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Alex Art &amp; Graphics. All rights reserved. Strict White, Yellow &amp; Navy Blue branding.</p>
+        <p>Premium Creative Agency Design</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Quote Modal -->
+  <div class="quote-modal" id="free-quote-modal">
+    <div class="quote-modal-content">
+      <button class="modal-close" aria-label="Close Modal" id="modal-close-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      
+      <div style="text-align: center; margin-bottom: 30px;">
+        <h2 class="text-navy" style="font-size: 28px; margin-bottom: 8px;">Request a Free Quote</h2>
+        <p>Upload your design and file specs, and we will get back to you with a digital mock and price estimate.</p>
+      </div>
+
+      <form id="quote-request-form">
+        <div class="form-group-row">
+          <div class="form-group">
+            <label for="modal-name">Full Name *</label>
+            <input type="text" id="modal-name" class="form-control" required placeholder="John Doe">
+          </div>
+          <div class="form-group">
+            <label for="modal-email">Email Address *</label>
+            <input type="email" id="modal-email" class="form-control" required placeholder="john@example.com">
+          </div>
+        </div>
+
+        <div class="form-group-row">
+          <div class="form-group">
+            <label for="modal-phone">Phone Number</label>
+            <input type="text" id="modal-phone" class="form-control" placeholder="(555) 555-5555">
+          </div>
+          <div class="form-group">
+            <label for="modal-service">Service Type *</label>
+            <select id="modal-service" class="form-control" required>
+              <option value="">Select Service...</option>
+              <option value="digitizing">Embroidery Digitizing</option>
+              <option value="vector">Vector Art Conversion</option>
+              <option value="patches">Custom Patches Manufacturing</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Attach Artwork / Logo File *</label>
+          <label class="form-file-upload">
+            <input type="file" id="modal-file" required accept=".jpg,.png,.gif,.pdf,.ai,.eps,.dst,.pes">
+            <div class="file-upload-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/>
+              </svg>
+            </div>
+            <p>Drag and drop your file here, or <strong>browse files</strong><br><span style="font-size: 12px; color: var(--text-muted);">Accepts JPG, PNG, PDF, AI, EPS, DST (Max 10MB)</span></p>
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label for="modal-notes">Project Instructions / Size Specs</label>
+          <textarea id="modal-notes" class="form-control" placeholder="Please specify dimensions, quantity of patches, or backing details (e.g. iron-on, velcro) here..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;" id="modal-submit-btn">Submit Quote Request</button>
+
+        <div class="success-alert" id="modal-success-msg">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+            <polyline points="22 4 12 14.01 9 11.01"/>
+          </svg>
+          <h3 class="text-navy" style="margin-bottom: 8px;">Quote Request Submitted Successfully!</h3>
+          <p>Thank you. We have received your file. Our design team will inspect your artwork and send you an email with pricing and details shortly.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Back to Top" id="scroll-to-top-btn">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
+
+  <!-- JS Link -->
+  <script src="app.js"></script>
+</body>
+</html>
